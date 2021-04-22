@@ -3,7 +3,7 @@ package exchangeprogram;
 public class Output {
 		
 	public static void printUSD(int usd, int dollar100, int dollar50, int dollar10, 		//달러로 환전한 값을 각 화폐 단위에 맞게 수량값을 출력하는 메소드
-								int dollar5, int dollar2, int dollar1, int changeUSD) {
+				    int dollar5, int dollar2, int dollar1, int changeUSD) {
 		System.out.println("달러 환전 결과");
 		System.out.println("달러 지급 : " + usd + " 달러");
 		System.out.println("100달러 - " + dollar100);
@@ -15,8 +15,8 @@ public class Output {
 		Processing.koreaChange(changeUSD);
 	}
 	
-	public static void printEUR(int euro, int euro100, int euro50, int euro10,				//유로화로 환전한 값을 각 화폐 단위에 맞게 수량값을 출력하는 메소드
-								int euro5, int euro2, int euro1, int changeEUR) {
+	public static void printEUR(int euro, int euro100, int euro50, int euro10,			//유로화로 환전한 값을 각 화폐 단위에 맞게 수량값을 출력하는 메소드
+				    int euro5, int euro2, int euro1, int changeEUR) {
 		System.out.println("유로 환전 결과");
 		System.out.println("유로 지급 : " + euro + " 유로");
 		System.out.println("100유로 - " + euro100);
@@ -28,8 +28,8 @@ public class Output {
 		Processing.koreaChange(changeEUR);
 	}
 	
-	public static void printJPY(int en, int en100, int en50, int en10,						//엔화로 환전한 값을 각 화폐 단위에 맞게 수량값을 출력하는 메소드
-								int en5, int en2, int en1, int changeJPY) {
+	public static void printJPY(int en, int en100, int en50, int en10,				//엔화로 환전한 값을 각 화폐 단위에 맞게 수량값을 출력하는 메소드
+				    int en5, int en2, int en1, int changeJPY) {
 		System.out.println("엔화 환전 결과");
 		System.out.println("엔화 지급 : " + en + " 엔");
 		System.out.println("100엔 - " + en100);
@@ -41,8 +41,8 @@ public class Output {
 		Processing.koreaChange(changeJPY);
 	} 
 		
-	public static void printKchange(int totalchange, int won1000, int won500, 				//환전하고 남은 잔돈을 화폐 단위에 맞게 수량값을 출력하는 메소드
-									int won100, int won50, int won10) {
+	public static void printKchange(int totalchange, int won1000, int won500, 			//환전하고 남은 잔돈을 화폐 단위에 맞게 수량값을 출력하는 메소드
+					int won100, int won50, int won10) {
 		System.out.println("원화 거스름 : " + totalchange + " 원");
 		System.out.println("1000원 - " + won1000 + " 원");
 		System.out.println("500원 - " + won500 + " 원");

@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class Processing {
 	public static Scanner s = new Scanner(System.in);	
-	static double won;						//환전할 원화
-	static int type;						//화폐 타입
-	static double USDResult;					//원화를 달러 환율로 나눠준 값
-	static double EURResult;					//원화를 유로화 환율로 나눠준 값
-	static double JPYResult;					//원화를 달러 환율로 나눠준 값
-	static int usd;							//지폐 단위로만 환전했을 때의 달러 환전 값
-	static int euro;						//지폐 단위로만 환전했을 때의 유로화 환전 값
-	static int en;							//지폐 단위로만 환전했을 때의 엔화 환전 값
-	static double kchange_USD;					//원화 잔돈의 1원 단위를 없애주기 위해 10으로 나눈 값
-	static double kchange_EUR;					//원화 잔돈의 1원 단위를 없애주기 위해 10으로 나눈 값
-	static double kchange_JPY;					//원화 잔돈의 1원 단위를 없애주기 위해 10으로 나눈 값
-	static int changeUSD; 						//소수점 아래 값들을 없애준 값
-	static int changeEUR;						//소수점 아래 값들을 없애준 값
-	static int changeJPY;						//소수점 아래 값들을 없애준 값	
+	static double won;										//환전할 원화
+	static int type;										//화폐 타입
+	static double USDResult;								//원화를 달러 환율로 나눠준 값
+	static double EURResult;								//원화를 유로화 환율로 나눠준 값
+	static double JPYResult;								//원화를 달러 환율로 나눠준 값
+	static int usd;											//지폐 단위로만 환전했을 때의 달러 환전 값
+	static int euro;										//지폐 단위로만 환전했을 때의 유로화 환전 값
+	static int en;											//지폐 단위로만 환전했을 때의 엔화 환전 값
+	static double kchange_USD;								//원화 잔돈의 1원 단위를 없애주기 위해 10으로 나눈 값
+	static double kchange_EUR;								//원화 잔돈의 1원 단위를 없애주기 위해 10으로 나눈 값
+	static double kchange_JPY;								//원화 잔돈의 1원 단위를 없애주기 위해 10으로 나눈 값
+	static int changeUSD; 									//소수점 아래 값들을 없애준 값
+	static int changeEUR;									//소수점 아래 값들을 없애준 값
+	static int changeJPY;									//소수점 아래 값들을 없애준 값	
 	
 	public static int exchangeUSD(double won) {				//달러로 환전한 값을 각 화폐 단위에 맞게 수량값을 저장하는 메소드
 		USDResult = won / Constant.EX_USD;

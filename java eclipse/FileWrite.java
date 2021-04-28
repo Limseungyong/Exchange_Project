@@ -15,13 +15,13 @@ public class FileWrite {
 	
 	public FileWrite() {		
 		try {
-			File file = new File("file_Address");			//데이터를 저장할 파일
+			File file = new File(Constant.file_Address);			//데이터를 저장할 파일
 			if (file.exists() == false) {												//파일의 존재 유무를 판별하기 위한 if문
 				isFileExist = false;
 			} else {
 				isFileExist = true;
 			}
-			fw = new FileWriter("file_Address", true);
+			fw = new FileWriter(Constant.file_Address, true);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
